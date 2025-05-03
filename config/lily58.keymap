@@ -69,7 +69,7 @@
 &kp CLCK          &kp Q                    &kp W   &kp E          &kp R        &kp T                                                       &kp Y            &kp U      &kp I       &kp O    &kp P     &mt BACKSPACE MINUS
 &kp LEFT_SHIFT    &kp A                    &kp S   &kp D          &kp F        &kp G                                                       &kp H            &kp J      &kp K       &kp L    &kp SEMI  &kp SQT
 &kp LEFT_CONTROL  &kp Z                    &kp X   &kp C          &kp V        &kp B         &kp LS(LA(LC(LEFT_GUI)))    &mt LEFT_WIN TAB  &kp N            &kp M      &kp COMMA   &kp DOT  &kp FSLH  &kp BACKSLASH
-                                                   &kp BACKSPACE  &lt 1 SPACE  &kp LEFT_ALT  &kp LEFT_GUI                &kp SPACE         &lt 1 RIGHT_ALT  &kp ENTER  &kp DELETE
+                                                   &kp BACKSPACE  &lt 1 SPACE  &kp LEFT_ALT  &mt LEFT_GUI SPACE          &kp SPACE         &lt 1 RIGHT_ALT  &kp ENTER  &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
