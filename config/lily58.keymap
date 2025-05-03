@@ -61,10 +61,10 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp ESCAPE        &kp TILDE  &kp F5  &kp F1         &kp F2       &kp F3                                               &kp AT_SIGN      &kp F20    &kp F21        &kp F7            &kp F8    &kp F9
-&kp CLCK          &kp Q      &kp W   &kp E          &kp R        &kp T                                                &kp Y            &kp U      &kp I          &kp O             &kp P     &kp MINUS
-&kp LEFT_SHIFT    &kp A      &kp S   &kp D          &kp F        &kp G                                                &kp H            &kp J      &kp K          &kp L             &kp SEMI  &kp SQT
-&kp LEFT_CONTROL  &kp Z      &kp X   &kp C          &kp V        &kp B         &kp LS(LA(LC(LEFT_GUI)))    &kp TAB    &kp N            &kp M      &kp LESS_THAN  &kp GREATER_THAN  &kp FSLH  &kp BACKSLASH
+&kp ESCAPE        &kp TILDE  &kp F5  &kp F1         &kp F2       &kp F3                                               &kp AT_SIGN      &kp F20    &kp F21     &kp F7   &kp F8    &kp F9
+&kp CLCK          &kp Q      &kp W   &kp E          &kp R        &kp T                                                &kp Y            &kp U      &kp I       &kp O    &kp P     &kp MINUS
+&kp LEFT_SHIFT    &kp A      &kp S   &kp D          &kp F        &kp G                                                &kp H            &kp J      &kp K       &kp L    &kp SEMI  &kp SQT
+&kp LEFT_CONTROL  &kp Z      &kp X   &kp C          &kp V        &kp B         &kp LS(LA(LC(LEFT_GUI)))    &kp TAB    &kp N            &kp M      &kp COMMA   &kp DOT  &kp FSLH  &kp BACKSLASH
                                      &kp BACKSPACE  &lt 2 SPACE  &kp LEFT_ALT  &kp LEFT_GUI                &kp SPACE  &lt 1 RIGHT_ALT  &kp ENTER  &kp DELETE
             >;
 
