@@ -22,11 +22,6 @@
             bindings = <&kp LC(LG(EQUAL))>;
             key-positions = <24 1>;
         };
-
-        del {
-            bindings = <&kp DELETE>;
-            key-positions = <24 42>;
-        };
     };
 
     behaviors {
