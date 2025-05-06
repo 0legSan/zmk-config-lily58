@@ -9,20 +9,7 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <51 24>;
-            bindings = <&lt 2 SPACE>;
-        };
-
-        screen {
-            bindings = <&kp LC(LG(EQUAL))>;
-            key-positions = <24 1>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     behaviors {
         ss_hs_modmorph: ss_hs_modmorph {
@@ -84,11 +71,11 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&kp ESCAPE  &none  &none  &none                   &none                    &none                                      &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3      &kp NUMBER_4      &kp NUMBER_5  &kp KP_PLUS
-&kp CAPS    &none  &none  &kp LA(LG(LEFT_ARROW))  &kp LA(LG(RIGHT_ARROW))  &none                                      &kp NUMBER_6  &kp NUMBER_7   &kp NUMBER_8      &kp N9            &kp NUMBER_0  &kp KP_SUBTRACT
-&kp LSHFT   &none  &none  &none                   &none                    &none                                      &kp UP        &kp LEFT       &kp RIGHT         &kp LPAR          &kp RPAR      &kp LEFT_SHIFT
-&kp LCTRL   &none  &none  &kp RC(LEFT_ARROW)      &kp LC(RIGHT_ARROW)      &none  &kp LA(LS(EQUAL))    &kp LA(EQUAL)  &kp DOWN      &kp AT_SIGN    &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp RBRC      &kp PIPE
-                          &kp BACKSPACE           &mo 1                    &none  &kp SPACE            &kp EQUAL      &mo 1         &kp SEMICOLON  &kp COLON
+&kp ESCAPE  &none  &none  &kp LS(LG(MINUS))       &kp LS(LG(N0))           &kp LG(LS(EQUAL))                                      &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3      &kp NUMBER_4      &kp NUMBER_5  &kp KP_PLUS
+&kp CAPS    &none  &none  &kp LA(LG(LEFT_ARROW))  &kp LA(LG(RIGHT_ARROW))  &none                                                  &kp NUMBER_6  &kp NUMBER_7   &kp NUMBER_8      &kp N9            &kp NUMBER_0  &kp KP_SUBTRACT
+&kp LSHFT   &none  &none  &none                   &none                    &none                                                  &kp UP        &kp LEFT       &kp RIGHT         &kp LPAR          &kp RPAR      &kp LEFT_SHIFT
+&kp LCTRL   &none  &none  &kp RC(LEFT_ARROW)      &kp LC(RIGHT_ARROW)      &none              &kp LA(LS(EQUAL))    &kp LA(EQUAL)  &kp DOWN      &kp AT_SIGN    &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp RBRC      &kp PIPE
+                          &kp BACKSPACE           &mo 1                    &none              &kp SPACE            &kp EQUAL      &mo 1         &kp SEMICOLON  &kp COLON
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
