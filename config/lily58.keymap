@@ -71,7 +71,7 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&kp ESCAPE  &none  &kp LG(LS(NUMBER_1))  &kp LS(LG(MINUS))       &kp LS(LG(N0))           &kp LG(LS(EQUAL))                                  &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3      &kp NUMBER_4      &kp NUMBER_5  &kp KP_PLUS
+&kp ESCAPE  &none  &kp LS(LC(NUMBER_1))  &kp LS(LG(MINUS))       &kp LS(LG(N0))           &kp LG(LS(EQUAL))                                  &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3      &kp NUMBER_4      &kp NUMBER_5  &kp KP_PLUS
 &kp CAPS    &none  &none                 &kp LA(LG(LEFT_ARROW))  &kp LA(LG(RIGHT_ARROW))  &none                                              &kp NUMBER_6  &kp NUMBER_7   &kp NUMBER_8      &kp N9            &kp NUMBER_0  &kp KP_SUBTRACT
 &kp LSHFT   &none  &none                 &none                   &none                    &none                                              &kp UP        &kp LEFT       &kp RIGHT         &kp LPAR          &kp RPAR      &kp LEFT_SHIFT
 &kp LCTRL   &none  &none                 &kp RC(LEFT_ARROW)      &kp LC(RIGHT_ARROW)      &none              &kp BACKSPACE    &kp BACKSPACE  &kp DOWN      &kp AT_SIGN    &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp RBRC      &kp PIPE
