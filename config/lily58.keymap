@@ -58,36 +58,36 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp ESCAPE                    &mt LG(LA(EQUAL)) TILDE  &kp F5  &kp F1        &kp F2        &kp F3                                        &kp F10          &kp F11                   &kp F12                   &kp F7   &kp F8    &kp F9
-&mt LS(LA(LC(LEFT_WIN))) TAB  &kp Q                    &kp W   &kp E         &kp R         &kp T                                         &kp Y            &kp U                     &kp I                     &kp O    &kp P     &mt RIGHT_BRACKET LEFT_BRACKET
-&kp LEFT_SHIFT                &kp A                    &kp S   &kp D         &kp F         &kp G                                         &kp H            &kp J                     &kp K                     &kp L    &kp SEMI  &kp SQT
-&kp LEFT_CONTROL              &kp Z                    &kp X   &kp C         &kp V         &kp B             &kp CAPS     &kp BACKSPACE  &kp N            &kp M                     &kp COMMA                 &kp DOT  &kp FSLH  &kp BACKSLASH
-                                                               &kp LEFT_ALT  &kp LEFT_WIN  &kp LA(LEFT_WIN)  &kp SPACE    &mt SPACE RET  &lt 2 RIGHT_ALT  &kp LS(LA(LC(LEFT_WIN)))  &kp LS(LA(LC(LEFT_WIN)))
+&kp ESCAPE                    &mt LG(LA(EQUAL)) TILDE  &kp F5  &kp F1        &kp F2        &kp F3                                        &kp F10          &kp F11         &kp F12                   &kp F7   &kp F8    &kp F9
+&mt LS(LA(LC(LEFT_WIN))) TAB  &kp Q                    &kp W   &kp E         &kp R         &kp T                                         &kp Y            &kp U           &kp I                     &kp O    &kp P     &mt RIGHT_BRACKET LEFT_BRACKET
+&kp LEFT_SHIFT                &kp A                    &kp S   &kp D         &kp F         &kp G                                         &kp H            &kp J           &kp K                     &kp L    &kp SEMI  &kp SQT
+&kp LEFT_CONTROL              &kp Z                    &kp X   &kp C         &kp V         &kp B             &kp CAPS     &kp BACKSPACE  &kp N            &kp M           &kp COMMA                 &kp DOT  &kp FSLH  &kp BACKSLASH
+                                                               &kp LEFT_ALT  &kp LEFT_WIN  &kp LA(LEFT_WIN)  &kp SPACE    &mt SPACE RET  &lt 1 RIGHT_ALT  &lt 2 LEFT_ALT  &kp LS(LA(LC(LEFT_WIN)))
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-        };
-
-        layer_4 {
-            bindings = <
-&trans  &trans  &trans  &trans       &trans       &trans                                   &trans  &trans          &trans          &trans     &trans  &trans
-&trans  &trans  &trans  &trans       &trans       &trans                                   &trans  &trans          &kp UP_ARROW    &trans     &trans  &trans
-&trans  &trans  &trans  &trans       &trans       &trans                                   &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans       &trans       &trans       &trans         &key_repeat  &trans  &trans          &trans          &trans     &trans  &trans
-                        &key_repeat  &key_repeat  &key_repeat  &key_repeat    &key_repeat  &trans  &trans          &trans
-            >;
         };
 
         Number {
             bindings = <
-&key_repeat  &none  &kp LS(LC(NUMBER_1))  &kp LS(LG(MINUS))  &kp LS(LG(N0))  &kp LG(LS(EQUAL))                                &mt ASTRK PLUS       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4     &kp N5
-&key_repeat  &none  &none                 &none              &none           &none                                            &mt KP_DIVIDE MINUS  &kp NUMBER_6  &kp N7        &kp N8        &kp KP_NUMBER_9  &kp KP_NUMBER_0
-&key_repeat  &none  &none                 &kp LC(LEFT)       &kp LC(RIGHT)   &none                                            &none                &none         &none         &none         &none            &none
-&key_repeat  &none  &none                 &none              &none           &none              &key_repeat    &kp BACKSPACE  &none                &none         &none         &none         &none            &none
-                                          &key_repeat        &key_repeat     &key_repeat        &kp SPACE      &kp EQUAL      &mo 2                &none         &none
+&key_repeat  &none  &kp LS(LC(NUMBER_1))  &kp LS(LG(MINUS))  &kp LS(LG(N0))  &kp LG(LS(EQUAL))                                &mt ASTRK PLUS       &kp NUMBER_1          &kp NUMBER_2           &kp NUMBER_3       &kp NUMBER_4     &kp N5
+&key_repeat  &none  &none                 &none              &none           &none                                            &mt KP_DIVIDE MINUS  &kp NUMBER_6          &kp N7                 &kp N8             &kp KP_NUMBER_9  &kp KP_NUMBER_0
+&key_repeat  &none  &none                 &kp LC(LEFT)       &kp LC(RIGHT)   &none                                            &kp LA(LS(EQUAL))    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES  &none            &none
+&key_repeat  &none  &none                 &none              &none           &none              &key_repeat    &kp BACKSPACE  &kp LA(EQUAL)        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SQT            &none            &none
+                                          &key_repeat        &key_repeat     &key_repeat        &kp SPACE      &kp EQUAL      &mo 1                &none                 &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        };
+
+        Arrow {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans          &trans          &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans          &kp UP_ARROW    &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans          &trans     &trans  &trans
+                        &trans  &trans  &trans  &trans    &trans  &trans  &mo 2           &trans
+            >;
         };
 
         dot {
@@ -101,13 +101,6 @@
         };
 
         Number {
-            // ------------------------------------------------------------------------------------------------------------
-            // | BTCLR | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                   |      |       |       |      |       |       |
-            // |  F1   |  F2 |  F3 |  F4  |  F5  |  F6  |                   |  F7  |  F8   |  F9   |  F10 |  F11  |  F12  |
-            // |   `   |  !  |  @  |  #   |  $   |  %   |                   |  ^   |  &    |  *    |  (   |   )   |   ~   |
-            // |       |     |     |      |      |      |        |  |       |      |  _    |  +    |  {   |   }   |  "|"  |
-            //                     |      |      |      |        |  |       |      |       |       |
-
             bindings = <
 &key_repeat  &none  &kp LS(LC(NUMBER_1))  &kp LS(LG(MINUS))  &kp LS(LG(N0))  &kp LG(LS(EQUAL))                                &mt ASTRK PLUS       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4     &kp N5
 &key_repeat  &none  &none                 &none              &none           &none                                            &mt KP_DIVIDE MINUS  &kp NUMBER_6  &kp N7        &kp N8        &kp KP_NUMBER_9  &kp KP_NUMBER_0
