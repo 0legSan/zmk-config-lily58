@@ -58,11 +58,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp ESCAPE                    &mt LG(LA(EQUAL)) TILDE  &kp F5  &kp F1        &kp F2        &kp F3                                        &kp F10          &kp F11         &kp F12                   &kp F7   &kp F8    &kp F9
-&mt LS(LA(LC(LEFT_WIN))) TAB  &kp Q                    &kp W   &kp E         &kp R         &kp T                                         &kp Y            &kp U           &kp I                     &kp O    &kp P     &mt RIGHT_BRACKET LEFT_BRACKET
-&kp LEFT_SHIFT                &kp A                    &kp S   &kp D         &kp F         &kp G                                         &kp H            &kp J           &kp K                     &kp L    &kp SEMI  &kp SQT
-&kp LEFT_CONTROL              &kp Z                    &kp X   &kp C         &kp V         &kp B             &kp CAPS     &kp BACKSPACE  &kp N            &kp M           &kp COMMA                 &kp DOT  &kp FSLH  &kp BACKSLASH
-                                                               &kp LEFT_ALT  &kp LEFT_WIN  &kp LA(LEFT_WIN)  &kp SPACE    &mt SPACE RET  &lt 1 RIGHT_ALT  &lt 2 LEFT_ALT  &kp LS(LA(LC(LEFT_WIN)))
+&kp ESCAPE                    &mt LG(LA(EQUAL)) TILDE  &kp F5  &kp F1        &kp F2        &kp F3                                        &kp F10          &kp F11         &kp F12              &kp F7   &kp F8    &kp F9
+&mt LS(LA(LC(LEFT_WIN))) TAB  &kp Q                    &kp W   &kp E         &kp R         &kp T                                         &kp Y            &kp U           &kp I                &kp O    &kp P     &mt RIGHT_BRACKET LEFT_BRACKET
+&kp LEFT_SHIFT                &kp A                    &kp S   &kp D         &kp F         &kp G                                         &kp H            &kp J           &kp K                &kp L    &kp SEMI  &kp SQT
+&kp LEFT_CONTROL              &kp Z                    &kp X   &kp C         &kp V         &kp B             &kp CAPS     &kp BACKSPACE  &kp N            &kp M           &kp COMMA            &kp DOT  &kp FSLH  &kp BACKSLASH
+                                                               &kp LEFT_ALT  &kp LEFT_WIN  &kp LA(LEFT_WIN)  &kp SPACE    &kp SPACE      &lt 1 RIGHT_ALT  &lt 2 LEFT_ALT  &kp LS(LA(LC(RET)))
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -70,11 +70,11 @@
 
         Number {
             bindings = <
-&key_repeat  &none  &kp LS(LC(NUMBER_1))  &kp LS(LG(MINUS))  &kp LS(LG(N0))  &kp LG(LS(EQUAL))                                &mt ASTRK PLUS       &kp NUMBER_1          &kp NUMBER_2           &kp NUMBER_3       &kp NUMBER_4     &kp N5
-&key_repeat  &none  &none                 &none              &none           &none                                            &mt KP_DIVIDE MINUS  &kp NUMBER_6          &kp N7                 &kp N8             &kp KP_NUMBER_9  &kp KP_NUMBER_0
-&key_repeat  &none  &none                 &kp LC(LEFT)       &kp LC(RIGHT)   &none                                            &kp LA(LS(EQUAL))    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES  &none            &none
-&key_repeat  &none  &none                 &none              &none           &none              &key_repeat    &kp BACKSPACE  &kp LA(EQUAL)        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SQT            &none            &none
-                                          &key_repeat        &key_repeat     &key_repeat        &kp SPACE      &kp EQUAL      &mo 1                &none                 &none
+&trans  &none  &kp LS(LC(NUMBER_1))  &kp LS(LG(MINUS))  &kp LS(LG(N0))  &kp LG(LS(EQUAL))                       &mt ASTRK PLUS       &kp NUMBER_1          &kp NUMBER_2           &kp NUMBER_3       &kp NUMBER_4     &kp N5
+&trans  &none  &none                 &none              &none           &none                                   &mt KP_DIVIDE MINUS  &kp NUMBER_6          &kp N7                 &kp N8             &kp KP_NUMBER_9  &kp KP_NUMBER_0
+&trans  &none  &none                 &kp LC(LEFT)       &kp LC(RIGHT)   &none                                   &kp LA(LS(EQUAL))    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES  &none            &none
+&trans  &none  &none                 &none              &none           &none              &trans    &trans     &kp LA(EQUAL)        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SQT            &none            &none
+                                     &trans             &trans          &trans             &trans    &kp EQUAL  &mo 1                &none                 &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
