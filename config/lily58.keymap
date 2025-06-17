@@ -94,9 +94,9 @@
             bindings = <
 &none  &none  &none  &none  &none  &none                     &none    &none          &none      &none    &none  &none
 &none  &none  &none  &none  &none  &none                     &none    &none          &none      &none    &none  &none
-&none  &none  &none  &none  &none  &none                     &none    &none          &none      &kp F22  &none  &kp F20
-&none  &none  &none  &none  &none  &none  &none    &kp PIPE  &none    &none          &none      &none    &none  &kp F21
-                     &none  &none  &none  &none    &kp F23   &kp F24  &kp LS(SLASH)  &kp SLASH
+&none  &none  &none  &none  &none  &none                     &none    &none          &none      &kp F18  &none  &kp F20
+&none  &none  &none  &none  &none  &none  &none    &kp PIPE  &none    &none          &none      &none    &none  &kp F19
+                     &none  &none  &none  &none    &kp F16   &kp F17  &kp LS(SLASH)  &kp SLASH
             >;
         };
     };
