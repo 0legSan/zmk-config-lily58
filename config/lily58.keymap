@@ -11,11 +11,6 @@
     combos {
         compatible = "zmk,combos";
 
-        Layer-dot {
-            bindings = <&lt 3 COLON>;
-            key-positions = <31 32>;
-        };
-
         tab {
             bindings = <&kp TAB>;
             key-positions = <17 16>;
@@ -63,11 +58,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp ESCAPE                     &mt LG(LA(EQUAL)) TILDE  &kp F5  &kp F1        &kp F2        &kp F3                                        &kp F10  &kp F11  &kp F12    &kp F7   &kp F8    &kp F9
-&mt LS(LA(LC(LEFT_WIN))) CAPS  &kp Q                    &kp W   &kp E         &kp R         &kp T                                         &kp Y    &kp U    &kp I      &kp O    &kp P     &mt RIGHT_BRACKET LEFT_BRACKET
-&kp LEFT_SHIFT                 &kp A                    &kp S   &kp D         &kp F         &kp G                                         &kp H    &kp J    &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LEFT_CONTROL               &kp Z                    &kp X   &kp C         &kp V         &kp B             &kp CAPS     &kp BACKSPACE  &kp N    &kp M    &kp COMMA  &kp DOT  &kp FSLH  &kp BACKSLASH
-                                                                &kp LEFT_ALT  &kp LEFT_WIN  &kp LA(LEFT_WIN)  &kp SPACE    &kp SPACE      &mo 1    &mo 2    &kp RET
+&kp ESCAPE                     &mt LG(LA(EQUAL)) TILDE  &kp F5  &kp F1        &kp F2        &kp F3                                        &kp F10  &kp F11               &kp F12    &kp F7   &kp F8    &kp F9
+&mt LS(LA(LC(LEFT_WIN))) CLCK  &kp Q                    &kp W   &kp E         &kp R         &kp T                                         &kp Y    &kp U                 &kp I      &kp O    &kp P     &mt RIGHT_BRACKET LEFT_BRACKET
+&kp LEFT_SHIFT                 &kp A                    &kp S   &kp D         &kp F         &kp G                                         &kp H    &lt 3 J               &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LEFT_CONTROL               &kp Z                    &kp X   &kp C         &kp V         &kp B             &kp CAPS     &kp BACKSPACE  &kp N    &kp M                 &kp COMMA  &kp DOT  &kp FSLH  &kp BACKSLASH
+                                                                &kp LEFT_ALT  &kp LEFT_WIN  &kp LA(LEFT_WIN)  &kp SPACE    &kp SPACE      &mo 1    &kp LS(LA(LC(LCMD)))  &kp RET
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -75,11 +70,11 @@
 
         Number {
             bindings = <
-&trans  &none  &kp LS(LC(NUMBER_1))  &kp LS(LG(MINUS))  &kp LS(LG(N0))  &kp LG(LS(EQUAL))                       &mt ASTRK PLUS       &kp NUMBER_1          &kp NUMBER_2           &kp NUMBER_3       &kp NUMBER_4     &kp N5
-&trans  &none  &none                 &none              &none           &none                                   &mt KP_DIVIDE MINUS  &kp NUMBER_6          &kp N7                 &kp N8             &kp KP_NUMBER_9  &kp KP_NUMBER_0
-&trans  &none  &none                 &kp LC(LEFT)       &kp LC(RIGHT)   &none                                   &kp LA(LS(EQUAL))    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES  &none            &none
-&trans  &none  &none                 &none              &none           &none              &trans    &trans     &kp LA(EQUAL)        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SQT            &none            &none
-                                     &trans             &trans          &trans             &trans    &kp EQUAL  &mo 1                &none                 &none
+&trans  &none          &none      &none          &none         &none                             &mt ASTRK PLUS       &kp NUMBER_1          &kp NUMBER_2           &kp NUMBER_3       &kp NUMBER_4     &kp N5
+&trans  &none          &none      &none          &none         &none                             &mt KP_DIVIDE MINUS  &kp NUMBER_6          &kp N7                 &kp N8             &kp KP_NUMBER_9  &kp KP_NUMBER_0
+&trans  &kp AMPERSAND  &kp POUND  &kp KP_DIVIDE  &kp ASTERISK  &kp PERCENT                       &kp F14              &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES  &none            &none
+&trans  &none          &none      &none          &none         &none        &trans    &trans     &kp LA(F15)          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SQT            &none            &none
+                                  &trans         &trans        &trans       &trans    &kp EQUAL  &mo 1                &none                 &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -97,10 +92,10 @@
 
         dot {
             bindings = <
-&none  &none  &none  &none  &none  &none                     &none    &none          &none      &none    &none  &none
-&none  &none  &none  &none  &none  &none                     &none    &none          &none      &none    &none  &none
-&none  &none  &none  &none  &none  &none                     &none    &none          &none      &kp F18  &none  &kp F20
-&none  &none  &none  &none  &none  &none  &none    &kp PIPE  &none    &none          &none      &none    &none  &kp F19
+&none  &none  &none  &none  &none  &none                     &none    &none          &none      &none  &none  &none
+&none  &none  &none  &none  &none  &none                     &none    &none          &none      &none  &none  &none
+&none  &none  &none  &none  &none  &none                     &none    &none          &kp F18    &none  &none  &kp F20
+&none  &none  &none  &none  &none  &none  &none    &kp PIPE  &none    &none          &none      &none  &none  &kp F19
                      &none  &none  &none  &none    &kp F16   &kp F17  &kp LS(SLASH)  &kp SLASH
             >;
         };
